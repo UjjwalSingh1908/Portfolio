@@ -21,7 +21,7 @@ a.active, a:hover{
     color:#000;
 }
 .header{
-      background-color:#000; 
+      background-color:#000;
       color:#fff;  
       border-color: #080808; 
       min-height: 50px;  
@@ -29,11 +29,13 @@ a.active, a:hover{
 }
 
 .inner-header{
+    background-color: #000;
     position: fixed;
-     width:80%;   
+     width:100%;   
      margin:auto; 
 }
 .header-link{
+    background-color: #000;
     display: box;
      float:right;
      height: 50px;  
@@ -48,7 +50,8 @@ a.active, a:hover{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    padding: 10px 0px;
+    padding: 50px 0px;
+    margin-bottom: 50px;
 }
 
 .content{
@@ -75,7 +78,7 @@ a.active, a:hover{
 }
 
 img{
-    margin-top: 50px;
+    
     margin-left: 2em;
     margin-right: 1em;
     border-radius: 50%;
@@ -107,3 +110,33 @@ b{
     color: #3333ff;
 }
 
+#two{
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+#about-content{
+
+    margin-left: 50px;
+    color: #fff;
+     font-size: 1.5em;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+.about-header{
+    text-align: center;
+    margin-right:  80px;
+}
+
+
+#logos{
+    margin-top: 1em;
+    margin-left: 450px;
+    border-radius: 10px;
+    height: 250px;
+    width: 450px;
+    animation: spin 7s infinite;
+    -webkit-animation: spin 6s infinite;
+     -webkit-filter: drop-shadow(5px 5px 5px #fff);
+    filter: drop-shadow(5px 5px 5px #fff); 
+}
