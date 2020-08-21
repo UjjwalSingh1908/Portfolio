@@ -77,7 +77,7 @@ a.active, a:hover{
     to{-webkit-transform: rotate(360deg);}
 }
 
-img{
+#profile{
     
     margin-left: 2em;
     margin-right: 1em;
@@ -114,14 +114,11 @@ b{
     padding: 50px 0px;
     margin-bottom: 50px;
 }
-#about-content{
+.about-content{
 
     margin-left: 50px;
     color: #fff;
      font-size: 1.5em;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
 }
 .about-header{
     text-align: center;
@@ -139,4 +136,51 @@ b{
     -webkit-animation: spin 6s infinite;
      -webkit-filter: drop-shadow(5px 5px 5px #fff);
     filter: drop-shadow(5px 5px 5px #fff); 
+}
+
+#three{
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+.p-link{
+    color: #0066ff;
+    text-decoration: underline;
+}
+
+.project{
+    display: flex;
+    justify-content: space-around;
+}
+.project-image{
+    border-radius: 0%;
+    height: 300px;
+    width: 300px;
+     -webkit-filter: drop-shadow(5px 5px 5px #fff);
+    filter: drop-shadow(5px 5px 5px #fff); 
+    transition: transform .2s;
+}
+.project-image:hover{
+    transform: scale(1.5); 
+}
+
+#four{
+    padding: 100px 0px;
+    margin-bottom: 50px;
+}
+.contact-image{
+    border-radius: 50%;
+     height: 300px;
+    width: 300px;
+     -webkit-filter: drop-shadow(5px 5px 5px #fff);
+    filter: drop-shadow(5px 5px 5px #fff); 
+    transition: transform .2s;
+}
+.contact-image:hover{
+    transform: scale(1.5); 
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
 }
