@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+       background-color: #000;
+       width: 100%;   
+       height: 100%;   
+       margin: 0; 
+}
+a{     text-decoration: none;   
+       background-color: transparent;
+       color:#ededed; 
+} 
+a.active, a:hover{
+    background-color: #fff;
+    color:#000;
+}
+.header{
+      background-color:#000; 
+      color:#fff;  
+      border-color: #080808; 
+      min-height: 50px;  
+      border: 1px solid transparent;
+}
+
+.inner-header{
+    position: fixed;
+     width:80%;   
+     margin:auto; 
+}
+.header-link{
+    display: box;
+     float:right;
+     height: 50px;  
+     padding: 15px 15px;
+     font-size:20px;  
+     font-weight: bold;
+    
+}
+
+#one{
+    background-image: url('../images/bgimage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 10px 0px;
+}
+
+.content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+        moz-transform:  rotateY(0deg);
+        ms-transform:  rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+         moz-transform:  rotateY(360deg);
+        ms-transform:  rotateY(360deg);
+    }
+}
+@-webkit-keyframes spin{
+    from{-webkit-transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);}
+}
+
+img{
+    margin-top: 50px;
+    margin-left: 2em;
+    margin-right: 1em;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    -webkit-filter: drop-shadow(5px 5px 5px #fff);
+    filter: drop-shadow(5px 5px 5px #fff); 
+    
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    
+    -webkit-animation-name: spin;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 5s;
+    
+}
+
+.text{
+    margin-top: 150px;
+    margin-right: 150px;
+    color:#fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+b{
+    color: #3333ff;
+}
+
