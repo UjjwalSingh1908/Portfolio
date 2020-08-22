@@ -1,6 +1,9 @@
+
+
+
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0rem;
+    margin: 0rem;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -16,25 +19,28 @@ a{     text-decoration: none;
        background-color: transparent;
        color:#ededed; 
 } 
- a:hover{
+a.active, a:hover{
     background-color: #fff;
     color:#000;
 }
 .header{
-      position:fixed;
-      background-color:#000;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    position: fixed;
       width: 100%;
+      background-color:#000; 
       color:#fff;  
-      height: 3.5rem;
-      display: flex;
-      flex-direction: row-reverse;
-      z-index: 1;
+        height: 3.5rem;
+        z-index: 1;
 }
 
+
 .header-link{
-    padding: 0.5rem 1.5rem;
-    font-size:1.5rem;  
-    font-weight: bold;
+     
+     padding: 0.5rem 1.5rem;
+     font-size:1.5rem;  
+     font-weight: bold;
     
 }
 
@@ -46,7 +52,6 @@ a{     text-decoration: none;
     padding: 1rem 0rem;
     margin-bottom: 10rem;
 }
-
 .content{
     margin-top: 1rem;
     display: flex;
@@ -71,7 +76,6 @@ a{     text-decoration: none;
 }
 
 #profile{
-    
     margin-top: 5rem;
     margin-left: 1.5rem;
     margin-right: 1em;
@@ -80,7 +84,7 @@ a{     text-decoration: none;
     width: 70%;
     -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
     filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff); 
-
+    
     animation-name: spin;
     animation-timing-function: linear;
     animation-iteration-count: 1;
@@ -95,7 +99,7 @@ a{     text-decoration: none;
 
 .text{
     margin-top: 10rem;
-    margin-right: 1rem;
+    margin-right: 10rem;
     color:#fff;
     text-align: center;
     font-size: 1.5rem;
@@ -103,13 +107,12 @@ a{     text-decoration: none;
 b{
     color: #3333ff;
 }
-
 #two{
     padding: 3rem 0rem;
     margin-bottom: 3rem;
+    
 }
 .about-content{
-
     margin-left: 5rem;
     color: #fff;
      font-size: 1.5em;
@@ -119,18 +122,21 @@ b{
 }
 .about-header{
     text-align: center;
+    ;
 }
 
-
+.logo{
+    padding-top: 1rem;
+    text-align: center;
+}
 #logos{
-    margin-top: 1rem;
-    margin-left: 25rem;
+    
     border-radius: 1rem;
     width: 30%;
     animation: spin 7s infinite;
     -webkit-animation: spin 6s infinite;
-    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
-    filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);  
+     -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff); 
 }
 
 #three{
@@ -149,7 +155,7 @@ b{
 .project-image{
     height: 100%;
     width: 80%;
-    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+     -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
     filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff); 
     transition: transform .2s;
 }
@@ -162,13 +168,17 @@ b{
     margin-bottom: 5rem;
     font-size: 1.5rem;
 }
+.contact{
+     display: flex;
+    justify-content: space-around;
+}
 .contact-image{
     border-radius: 50%;
-    height: 10rem;
-   width: 10rem;
-    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
-   filter: drop-shadow(0.5rem 0.5rem 0.5rem  #fff); 
-   transition: transform .2s;
+     height: 10rem;
+    width: 10rem;
+     -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem  #fff); 
+    transition: transform .2s;
 }
 .contact-image:hover{
     transform: scale(1.5); 
@@ -177,6 +187,55 @@ b{
 footer{
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
+    font-size:1.5rem;
     padding: 0.5rem;
 }
+
+@media only screen and (max-width:992px) {
+  html{
+    font-size: 70%;
+  }
+ 
+  }
+  
+  @media only screen and (max-width:700px){
+     html{
+    font-size: 70%;
+  }
+  .header{
+      height: 15rem;
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+      }
+   .content{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+         }
+         .text{
+             margin-top: 5rem;
+         padding-left: 10rem;
+         
+         }
+         #logos{
+             width: 25rem;
+             height: 15rem
+         }
+         .project{
+             display: flex;
+             flex-direction: column;
+             text-align: center;
+         }
+         .project-image{
+             padding-bottom: 3rem;
+             height: 15rem;
+             width: 25rem;
+         }
+         .contact-image{
+             height: 5rem;
+             width: 5rem;
+            
+         }
+  }
