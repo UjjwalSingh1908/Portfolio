@@ -122,7 +122,7 @@ b{
 }
 .about-header{
     text-align: center;
-    ;
+    
 }
 
 .logo{
@@ -238,4 +238,9 @@ footer{
              width: 5rem;
             
          }
+        #two, #three,#four{
+            padding-right: 5rem;
+        }
+       
+
   }
