@@ -16,32 +16,25 @@ a{     text-decoration: none;
        background-color: transparent;
        color:#ededed; 
 } 
-a.active, a:hover{
+ a:hover{
     background-color: #fff;
     color:#000;
 }
 .header{
+      position:fixed;
       background-color:#000;
+      width: 100%;
       color:#fff;  
-      border-color: #080808; 
-      min-height: 50px;  
-      border: 1px solid transparent;
+      height: 3.5rem;
+      display: flex;
+      flex-direction: row-reverse;
+      z-index: 1;
 }
 
-.inner-header{
-    background-color: #000;
-    position: fixed;
-     width:100%;   
-     margin:auto; 
-}
 .header-link{
-    background-color: #000;
-    display: box;
-     float:right;
-     height: 50px;  
-     padding: 15px 15px;
-     font-size:20px;  
-     font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    font-size:1.5rem;  
+    font-weight: bold;
     
 }
 
@@ -50,12 +43,12 @@ a.active, a:hover{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    padding: 50px 0px;
-    margin-bottom: 50px;
+    padding: 1rem 0rem;
+    margin-bottom: 10rem;
 }
 
 .content{
-    margin-top: 10px;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-around;
 }
@@ -79,14 +72,15 @@ a.active, a:hover{
 
 #profile{
     
-    margin-left: 2em;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
     margin-right: 1em;
     border-radius: 50%;
-    height: 500px;
-    width: 500px;
-    -webkit-filter: drop-shadow(5px 5px 5px #fff);
-    filter: drop-shadow(5px 5px 5px #fff); 
-    
+    height: 80%;
+    width: 70%;
+    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff); 
+
     animation-name: spin;
     animation-timing-function: linear;
     animation-iteration-count: 1;
@@ -100,47 +94,48 @@ a.active, a:hover{
 }
 
 .text{
-    margin-top: 150px;
-    margin-right: 150px;
+    margin-top: 10rem;
+    margin-right: 1rem;
     color:#fff;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 b{
     color: #3333ff;
 }
 
 #two{
-    padding: 50px 0px;
-    margin-bottom: 50px;
+    padding: 3rem 0rem;
+    margin-bottom: 3rem;
 }
 .about-content{
 
-    margin-left: 50px;
+    margin-left: 5rem;
     color: #fff;
      font-size: 1.5em;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
 }
 .about-header{
     text-align: center;
-    margin-right:  80px;
 }
 
 
 #logos{
-    margin-top: 1em;
-    margin-left: 450px;
-    border-radius: 10px;
-    height: 250px;
-    width: 450px;
+    margin-top: 1rem;
+    margin-left: 25rem;
+    border-radius: 1rem;
+    width: 30%;
     animation: spin 7s infinite;
     -webkit-animation: spin 6s infinite;
-     -webkit-filter: drop-shadow(5px 5px 5px #fff);
-    filter: drop-shadow(5px 5px 5px #fff); 
+    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);  
 }
 
 #three{
-    padding: 50px 0px;
-    margin-bottom: 50px;
+    padding: 3rem 0rem;
+    margin-bottom: 3rem;
 }
 .p-link{
     color: #0066ff;
@@ -152,11 +147,10 @@ b{
     justify-content: space-around;
 }
 .project-image{
-    border-radius: 0%;
-    height: 300px;
-    width: 300px;
-     -webkit-filter: drop-shadow(5px 5px 5px #fff);
-    filter: drop-shadow(5px 5px 5px #fff); 
+    height: 100%;
+    width: 80%;
+    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff); 
     transition: transform .2s;
 }
 .project-image:hover{
@@ -164,16 +158,17 @@ b{
 }
 
 #four{
-    padding: 100px 0px;
-    margin-bottom: 50px;
+    padding: 5rem 0rem;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
 }
 .contact-image{
     border-radius: 50%;
-     height: 300px;
-    width: 300px;
-     -webkit-filter: drop-shadow(5px 5px 5px #fff);
-    filter: drop-shadow(5px 5px 5px #fff); 
-    transition: transform .2s;
+    height: 10rem;
+   width: 10rem;
+    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem #fff);
+   filter: drop-shadow(0.5rem 0.5rem 0.5rem  #fff); 
+   transition: transform .2s;
 }
 .contact-image:hover{
     transform: scale(1.5); 
@@ -182,5 +177,6 @@ b{
 footer{
     text-align: center;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
